@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "HBO Max - AutoSkip",
+    "version": "1.0",
+
+    "description": "Automatically skips intros and endings of any episode on HBO Max!",
+
+    "icons": {
+        "48": "icons/skip-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.hbomax.com/*"],
+            "js": ["autoskipper.js"]
+        }       
+    ]
+}
