@@ -11,7 +11,10 @@
 
     "content_scripts": [
         {
-            "matches": ["*://*.hbomax.com/*"],
+            "matches": [
+                "*://*.hbomax.com/*",
+                "*://*.max.com/*"
+            ],
             "js": ["autoskipper.js"]
         }       
     ]
